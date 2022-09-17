@@ -12,16 +12,16 @@ public class Binary_search {
 		
 		while(low <= high)
 		{
-			if(a[mid] > element)
+			if(a[mid] > element) //high pointer will be on the left side of mid
 			{
 				high = mid - 1;
 			}
-			else if(a[mid] == element)
+			else if(a[mid] == element)//element is found at mid
 			{
 				System.out.println("Found at: "+mid);
 				break;
 			}
-			else if(a[mid] < element)
+			else if(a[mid] < element)//low pointer will be on the next element to the mid value
 			{
 				low = mid + 1;
 			}
