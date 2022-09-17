@@ -12,7 +12,7 @@ public class Binary_search {
 		
 		while(low <= high)
 		{
-			if(a[mid] > element) //high pointer will be on the left side of mid
+			if(a[mid] > element) //high pointer will be on the left side of mid value
 			{
 				high = mid - 1;
 			}
